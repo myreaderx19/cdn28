@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="http://stuckat32.com/comiccontrol/defaultstyles.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="http://stuckat32.com/favicon.ico" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://stuckat32.com/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://stuckat32.com/favicon.ico" type="image/x-icon">
+<link href="http://stuckat32.com/32.css?v=2" type="text/css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>32 - </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+</head>
+<body>
+<br />
+<b>Fatal error</b>:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND publishtime &lt; 1602570412 ORDER BY publishtime DESC LIMIT 1' at line 1' in /home/stuckat32/public_html/comiccontrol/includes/classes.php:787
+Stack trace:
+#0 /home/stuckat32/public_html/comiccontrol/includes/classes.php(787): PDO-&gt;prepare('SELECT * FROM c...')
+#1 /home/stuckat32/public_html/templates/main/includes/header.php(24): CC_Comic-&gt;getSeq('prev')
+#2 /home/stuckat32/public_html/templates/main/comicpage.php(10): include('/home/stuckat32...')
+#3 /home/stuckat32/public_html/index.php(40): require_once('/home/stuckat32...')
+#4 {main}
+  thrown in <b>/home/stuckat32/public_html/comiccontrol/includes/classes.php</b> on line <b>787</b><br />
